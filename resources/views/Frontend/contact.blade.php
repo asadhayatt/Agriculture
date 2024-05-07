@@ -96,7 +96,7 @@ info@gmail.com<br>
 	</div>
 	<div class="col-md-6">
 	 <div class="contact_2r text-center">
-       <img style="border-radius:5px;" src="img/25.jpg" alt="abc">
+       <img style="border-radius:5px;" src="{{url('frontend/img/25.jpg')}}" alt="abc">
 	   <h5 class="col_1 mt-4">GET IN TOUCH WITH US</h5>
 		<h3>HAVE QUESTION?</h3>
 		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>

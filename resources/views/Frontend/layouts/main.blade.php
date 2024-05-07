@@ -9,6 +9,10 @@
 	<link href="{{url('Frontend/css/font-awesome.min.css')}}" rel="stylesheet" >
 	<link href="{{url('Frontend/css/global.css')}}" rel="stylesheet">
 	<link href="{{url('Frontend/css/index.css')}}" rel="stylesheet">
+    <link href="{{url('Frontend/css/contact.css')}}" rel="stylesheet">
+    <link href="{{url('Frontend/css/blog.css')}}" rel="stylesheet">
+    <link href="{{url('Frontend/css/services.css')}}" rel="stylesheet">
+    <link href="{{url('Frontend/css/about.css')}}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
 	<script src="{{url('Frontend/js/bootstrap.bundle.min.js')}}"></script>
