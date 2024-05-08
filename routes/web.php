@@ -22,10 +22,10 @@ use App\Http\Controllers\Frontend\ServicesController;
 |
 */
 
-Route::get('/',[AboutController::class,'index']);
+Route::get('/',[IndexController::class,'index']);
+Route::get('/about',[AboutController::class,'index']);
 Route::get('/blog',[BlogController::class,'index']);
 Route::get('/contact',[ContactController::class,'index']);
 Route::get('/gallery',[GalleryController::class,'index']);
-Route::get('/index',[IndexController::class,'index']);
 Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
