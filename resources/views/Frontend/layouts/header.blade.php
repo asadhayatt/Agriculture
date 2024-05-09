@@ -74,9 +74,12 @@
 		<li class="nav-item">
           <a class="nav-link" href="{{url('/contact')}}">Contact Us</a>
         </li>
+       
 
 		<li class="nav-link"><a data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>  </li>
-
+<li class="nav-link" >
+  <a class="btn btn-success" style="padding:2px" href="{{url('new-service')}}">New Service</a>
+</li>
 		<div class="modal fade" id="exampleModal2" tabindex="-1"  style="display: none; top: 20px;" aria-hidden="true">
 		  <div class="modal-dialog">
 			<div class="modal-content">

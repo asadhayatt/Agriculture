@@ -8,7 +8,7 @@ use App\Http\Controllers\Frontend\GalleryController;
 use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\PortfolioController;
 use App\Http\Controllers\Frontend\ServicesController;
-
+use App\Http\Controllers\Backend\VehicleController;
 
 
 /*
@@ -29,3 +29,5 @@ Route::get('/contact',[ContactController::class,'index']);
 Route::get('/gallery',[GalleryController::class,'index']);
 Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
+Route::get('/new-service',[VehicleController::class,'index'])->name('index');
+Route::post('/new-service',[VehicleController::class,'create']);
