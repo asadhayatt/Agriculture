@@ -3,12 +3,17 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Vehicle;
 use Illuminate\Http\Request;
 
 class ServicesController extends Controller
 {
     public function index()
     {
-    return view('Frontend.services');
+         $services = Vehicle::get();
+        return view('Frontend.services',get_defined_vars());
+    }
+    public function serviceDetail($id){
+        return 'detail Page';
     }
 }

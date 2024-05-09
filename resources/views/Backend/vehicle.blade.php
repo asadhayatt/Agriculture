@@ -1,47 +1,70 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class=" container mt-5">
-          <div class="row">
-             <div class="col-sm-6">
-                <form action="" method="POST">
-                    @csrf
-                    <div class="mb-1">
-                        <label for="Model" class="form-label">Vehicel Name</label>
-                        <input type="text" class="form-control" id="Model" name="vehiclename">
-                    </div>
-                    <div class="mb-2">
-                        <label for="Price" class="form-label">Vehicle Price</label>
-                        <input type="number" class="form-control" id="Price" name="price">
-                    </div>
-                    <div class="mb-2">
-                        <label for="type" class="form-label">Vehicle Type</label>
-                        <input type="value" class="form-control" id="type" name="type">
-                    </div>
-                    <div class="mb-2">
-                        <label for="weight" class="form-label">Vehicle Weight</label>
-                        <input type="number" class="form-control" id="weight" name="weight">
-                    </div>
-                    <div class="mb-2">
-                        <label for="image" class="form-label">Image</label>
-                        <input type="image" class="form-control" id="image" name="image">
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">submit</button>
-              </form>
-             </div>
-             <div class="col-sm-6">
-             
-               
-             </div>
-          </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>
+@extends('Frontend.layouts.main')
+
+
+@section('main-container')
+
+<div class="row contact_2 mt-5">
+    <div class="col-md-6">
+	 <div class="contact_2l">
+         <h5 class="col_4">CONTACT WITH US</h5>
+		<h3 class="text-white">WRITE US A MESSAGE</h3>
+		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
+		<div class="row quote_2 mt-3">
+		<div class="col-md-6">
+		<div class="quote_2l">
+        <form action="{{ url('/new-service') }}" method="POST">
+            @csrf
+            <input placeholder="Vehicle Name" class="form-control" type="text" name="vehiclename">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="quote_2l">
+            <input placeholder="Vehicle Price" class="form-control" type="number" name="price">
+            </div>
+            </div>
+            </div>
+            <div class="row quote_2 mt-4">
+            <div class="col-md-6">
+            <div class="quote_2l">
+            <input placeholder="Vehicle Type" class="form-control" type="text" name="type">
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="quote_2l">
+            <input placeholder="Vehicle Weight (How much carry)" class="form-control" type="number"  name="weight">
+            </div>
+            </div>
+            </div>
+            <div class="row quote_2 mt-4">
+            <div class="col-md-12">
+            <div class="quote_2l">
+                <input type="file" placeholder="Upload a file" name="image">
+            </div>
+            </div>
+            </div>
+            <div class="row quote_2 mt-3">
+            <div class="col-md-12">
+            <div class="quote_2l">
+            <button class="btn btn-warning d-inline-block mt-3 mb-0" type="submit">Submit Ad</button>
+            </div>
+        </form>
+		</div>
+		</div>
+	 </div>
+	</div>
+	<div class="col-md-6">
+	 <div class="contact_2r text-center">
+       <img style="border-radius:5px;" src="{{url('frontend/img/25.jpg')}}" alt="abc">
+	   <h5 class="col_1 mt-4">GET IN TOUCH WITH US</h5>
+		<h3>HAVE QUESTION?</h3>
+		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
+		<p>There are many variations of passages available but the majority have suffered alteration in some form by inject humour or donec vel erat sollicitudin, dapibus dui at, porttitor sem.</p>
+		 <h5><a class="button_1" href="#">Learn More</a></h5>
+	 </div>
+	</div>
+
+  </div>
+
+
+
+@endsection
