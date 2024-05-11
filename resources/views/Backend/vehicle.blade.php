@@ -60,10 +60,10 @@
 		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
 		<p>There are many variations of passages available but the majority have suffered alteration in some form by inject humour or donec vel erat sollicitudin, dapibus dui at, porttitor sem.</p>
 		 <h5><a class="button_1" href="#">Learn More</a></h5>
-	 </div>
-	</div>
+	  </div>
+	  </div>
 
-  </div>
+     </div>
 
 
 

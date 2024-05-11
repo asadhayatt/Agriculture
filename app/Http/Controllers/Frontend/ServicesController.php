@@ -10,10 +10,11 @@ class ServicesController extends Controller
 {
     public function index()
     {
-         $services = Vehicle::get();
+         $vehicles = Vehicle::get();
         return view('Frontend.services',get_defined_vars());
     }
-    public function serviceDetail($id){
-        return 'detail Page';
+    public function details($id){
+       $item=Vehicle::find($id);
+        return view('Backend.details',compact('item'));
     }
 }

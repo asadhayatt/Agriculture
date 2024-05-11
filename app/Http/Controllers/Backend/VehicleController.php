@@ -13,6 +13,7 @@ class VehicleController extends Controller
      */
     public function index()
     {
+    
         return view('Backend.vehicle');
     }
 
@@ -47,7 +48,7 @@ class VehicleController extends Controller
      */
     public function show(string $id)
     {
-        //
+       
     }
 
     /**

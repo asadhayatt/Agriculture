@@ -168,11 +168,11 @@
 	</div>
    </div>
    <div class="connect_2 row">
-     @foreach ($services as $item)
+     @foreach ($vehicles as $item)
         <div class="product-card">
             <div class="badge">Hot</div>
             <div class="product-tumb">
-                <img src="{{asset('Frontend/img/7.jpg')}}" alt="">
+                <img src="{{url('Frontend/img/7.jpg')}}" alt="">
             </div>
             <div class="product-details">
                 <span class="product-catagory">{{ $item->type }}</span>
@@ -182,7 +182,7 @@
                 <div class="product-bottom-details">
                     <div class="product-price">Rs.{{ $item->price }}</div>
                     <div class="btn_style text-end">
-                        <button class="btn btn-warning">Book Now</button>
+                        <a href="{{url('/details', $item->id)}}"><button class="btn btn-warning">Book Now</button></a>
                     </div>
                 </div>
             </div>

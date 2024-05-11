@@ -31,3 +31,4 @@ Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
 Route::get('/new-service',[VehicleController::class,'index'])->name('index');
 Route::post('/new-service',[VehicleController::class,'create']);
+Route::get('/details/{id}',[ServicesController::class,'details']);
