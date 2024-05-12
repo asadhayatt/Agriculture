@@ -15,6 +15,7 @@
     <link href="{{url('Frontend/css/about.css')}}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('Frontend/css/custom-style.css') }}">
 	<script src="{{url('Frontend/js/bootstrap.bundle.min.js')}}"></script>
 
 </head>

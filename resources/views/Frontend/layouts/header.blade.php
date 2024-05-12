@@ -39,8 +39,8 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-0 justify-content-center">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
         </li>
@@ -48,38 +48,16 @@
 		<li class="nav-item">
           <a class="nav-link" href="{{url('/about')}}">About Us</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{url('/blog')}}">Blog</a></li>
-            <li><a class="dropdown-item" href="blog_detail.html">Blog Detail</a></li>
-          </ul>
-        </li>
-
 		<li class="nav-item">
           <a class="nav-link" href="{{url('/services')}}">Services</a>
         </li>
-
-		<li class="nav-item">
-          <a class="nav-link" href="{{url('/portfolio')}}">Portfolio</a>
-        </li>
-
-		<li class="nav-item">
-          <a class="nav-link" href="{{url('/gallery')}}">Gallery</a>
-        </li>
-
-
 		<li class="nav-item">
           <a class="nav-link" href="{{url('/contact')}}">Contact Us</a>
         </li>
-       
-
+        <li class="nav-link" >
+            <a class="btn btn-success" style="padding:2px" href="{{url('new-service')}}">New Service</a>
+        </li>
 		<li class="nav-link"><a data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>  </li>
-<li class="nav-link" >
-  <a class="btn btn-success" style="padding:2px" href="{{url('new-service')}}">New Service</a>
-</li>
 		<div class="modal fade" id="exampleModal2" tabindex="-1"  style="display: none; top: 20px;" aria-hidden="true">
 		  <div class="modal-dialog">
 			<div class="modal-content">

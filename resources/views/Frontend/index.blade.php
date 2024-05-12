@@ -202,11 +202,8 @@ pass of majority.</p>
     <div class="container">
      <div class="row type_1 text-center">
      <div class="col-md-12">
-	  <span><i class="fa fa-play"></i></span>
 	  <h5 class="col_1 mt-4 mb-3">MODERN AGRICULTURE TYPES</h5>
 	  <h2 class="text-white">AGRICULTURE MATTERS TO THE <br> FUTURE OF DEVELOPMENT</h2>
-	  <p class="text-light mt-3">Adipisie cing elit sed eiusmod tempor on labore et dolore. Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-	  <h5 class="mb-0 mt-4"><a class="button" href="#">Know More  </a></h5>
 	 </div>
    </div>
   </div>
@@ -222,9 +219,6 @@ pass of majority.</p>
 		<h2>WHAT OUR CUSTOMERS ARE <br> TALKING ABOUT</h2>
 		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
 		<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
-		 <span class="span_1"><i class="fa fa-user-secret"></i></span>
-		 <h3>3870000</h3>
-		 <p>Agriculture projects are completed</p>
 	  </div>
 	 </div>
 	 <div class="col-md-6">
@@ -251,7 +245,7 @@ pass of majority.</p>
 			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
 			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 			<h5>Eget Nulla</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
+			<h6 class="col_2 mb-0">Farmer</h6>
 		  </div>
 		</div>
 		<div class="col-md-6">
@@ -267,7 +261,7 @@ pass of majority.</p>
 			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
 			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 			<h5>Semp Port</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
+			<h6 class="col_2 mb-0">Farmer</h6>
 		  </div>
 		</div>
 	  </div>
@@ -375,7 +369,7 @@ pass of majority.</p>
 			<div class="proj_1i2 position-absolute w-100">
 			  <h3 class="text-white">AGRICULTURE FARMING</h3>
 			  <p class="text-light">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			  <h5 class="mb-0 mt-3"><a class="button" href="#">Read More  </a></h5>
+
 			</div>
 		  </div>
 		 </div>
@@ -391,7 +385,7 @@ pass of majority.</p>
 			<div class="proj_1i2 position-absolute w-100">
 			  <h3 class="text-white">SYSTEMS REFORMS</h3>
 			  <p class="text-light">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			  <h5 class="mb-0 mt-3"><a class="button" href="#">Read More  </a></h5>
+
 			</div>
 		  </div>
 		 </div>
@@ -407,7 +401,7 @@ pass of majority.</p>
 			<div class="proj_1i2 position-absolute w-100">
 			  <h3 class="text-white">ORGANIC SOLUTIONS</h3>
 			  <p class="text-light">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			  <h5 class="mb-0 mt-3"><a class="button" href="#">Read More  </a></h5>
+
 			</div>
 		  </div>
 		 </div>
@@ -431,33 +425,26 @@ pass of majority.</p>
 	  </div>
 	 </div>
 	</div>
-	<div class="row award_1">
+	<div class="row award_1 justify-content-center">
     <div class="col-md-3">
 	  <div class="award_1i text-center">
 	    <span style="font-size:50px;" class="col_4"><i class="fa fa-car"></i></span>
 		<h1 class="text-white mt-2">700</h1>
-		<h5 class="col_3 mb-0">+ Happy Clients</h5>
+		<h5 class="col_3 mb-0">+ Total Vehicles</h5>
 	  </div>
 	</div>
 	<div class="col-md-3">
 	  <div class="award_1i text-center">
 	    <span style="font-size:50px;" class="col_4"><i class="fa fa-users"></i></span>
 		<h1 class="text-white mt-2">200</h1>
-		<h5 class="col_3 mb-0">+ Total Members</h5>
+		<h5 class="col_3 mb-0">+ Happy Drivers</h5>
 	  </div>
 	</div>
 	<div class="col-md-3">
 	  <div class="award_1i text-center">
 	    <span style="font-size:50px;" class="col_4"><i class="fa fa-user-plus"></i></span>
 		<h1 class="text-white mt-2">600</h1>
-		<h5 class="col_3 mb-0">+ Expert Instructor</h5>
-	  </div>
-	</div>
-	<div class="col-md-3">
-	  <div class="award_1i text-center">
-	    <span style="font-size:50px;" class="col_4"><i class="fa fa-trophy"></i></span>
-		<h1 class="text-white mt-2">100</h1>
-		<h5 class="col_3 mb-0">+ Win Awards</h5>
+		<h5 class="col_3 mb-0">+ Happy Farmers</h5>
 	  </div>
 	</div>
    </div>
@@ -500,79 +487,6 @@ OF EXPERIENCE</h4>
   </div>
 </section>
 
-<section id="news">
-  <div class="container">
-     <div class="row serv_1 text-center mb-3">
-     <div class="col-md-12">
-	   <h5 class="col_1">FROM THE BLOG</h5>
-	   <h2 class="mb-0">NEWS & ARTICLES</h2>
-	   <span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
-	 </div>
-   </div>
-     <div class="row news_1">
-     <div class="col-md-4">
-	   <div class="news_1i position-relative">
-	    <div class="news_1i1">
-		  <div class="grid clearfix">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/16.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		</div>
-		<div class="news_1i2 text-center position-absolute">
-		  <ul>
-			<li style="margin-right:20px;" class="d-inline-block"><a href="#"><i class="fa fa-user col_1"></i> ADMIN</a></li>
-			<li class="d-inline-block"><a href="#"><i class="fa fa-calendar col_1"></i> 3 COMMENTS</a></li>
-			</ul>
-			<h4><a href="#">Agriculture Miracle you Don’t Know About</a></h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
-			<h5 class="mb-0"><a class="button" href="#">Read More  </a></h5>
-		</div>
-	   </div>
-	 </div>
-	 <div class="col-md-4">
-	   <div class="news_1i position-relative">
-	    <div class="news_1i1">
-		  <div class="grid clearfix">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/17.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		</div>
-		<div class="news_1i2 text-center position-absolute">
-		  <ul>
-			<li style="margin-right:20px;" class="d-inline-block"><a href="#"><i class="fa fa-user col_1"></i> ADMIN</a></li>
-			<li class="d-inline-block"><a href="#"><i class="fa fa-calendar col_1"></i> 3 COMMENTS</a></li>
-			</ul>
-			<h4><a href="#">Amount of Freak Bread or Other Fruits</a></h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
-			<h5 class="mb-0"><a class="button" href="#">Read More  </a></h5>
-		</div>
-	   </div>
-	 </div>
-	 <div class="col-md-4">
-	   <div class="news_1i position-relative">
-	    <div class="news_1i1">
-		  <div class="grid clearfix">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/18.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		</div>
-		<div class="news_1i2 text-center position-absolute">
-		  <ul>
-			<li style="margin-right:20px;" class="d-inline-block"><a href="#"><i class="fa fa-user col_1"></i> ADMIN</a></li>
-			<li class="d-inline-block"><a href="#"><i class="fa fa-calendar col_1"></i> 3 COMMENTS</a></li>
-			</ul>
-			<h4><a href="#">Winter Wheat Harvest Gathering Momentum</a></h4>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
-			<h5 class="mb-0"><a class="button" href="#">Read More  </a></h5>
-		</div>
-	   </div>
-	 </div>
-   </div>
-  </div>
-</section>
 
 <section id="qual">
   <div class="type_m">
@@ -581,7 +495,7 @@ OF EXPERIENCE</h4>
      <div class="col-md-12">
 	  <h2 class="text-white">PROVIDE YOU THE HIGHEST QUALITY PRODUCTS THAT MEETS YOUR EXPECTATION</h2>
 	  <p class="text-light mt-3">Adipisie cing elit sed eiusmod tempor on labore et dolore. Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-	  <h5 class="mb-0 mt-4"><a class="button" href="#">Discover More  </a></h5>
+	  <h5 class="mb-0 mt-4"><a class="button" href="/services">Discover More  </a></h5>
 	 </div>
    </div>
   </div>
