@@ -113,16 +113,6 @@
 
 </style>
 
-<section id="center" class="center_o">
- <div class="container">
-  <div class="row center_o1 text-center">
-   <div class="col-md-12">
-     <h1 class="text-white">Services</h1>
-	 <h5 class="normal col_4 mb-0"><a class="col_3" href="#">Home</a> <span class="col_2">/</span> <a class="col_3" href="#">Pages</a> <span class="col_3">/</span> Services  </h5>
-   </div>
-  </div>
- </div>
-</section>
 
 <section id="off">
  <div class="container">
@@ -163,14 +153,14 @@
 	</div>
 	<div class="col-md-2">
 	 <div class="connect_1r clearfix">
-	   <h5 class="mb-0"><a class="button_1" href="#">Contact Us</a></h5>
+	   <h5 class="mb-0"><a class="button_1" href="{{url('/new-service')}}">Post Adds</a></h5>
 	 </div>
 	</div>
    </div>
    <div class="connect_2 row">
      @foreach ($vehicles as $item)
         <div class="product-card">
-            <div class="badge">Hot</div>
+            <div class="badge">Available</div>
             <div class="product-tumb">
                 <img src="{{url('Frontend/img/7.jpg')}}" alt="">
             </div>
@@ -229,143 +219,5 @@ OF EXPERIENCE</h4>
   </div>
 </section>
 
-<section id="testim">
-  <div class="container">
-    <div class="row testim_1">
-	 <div class="col-md-6">
-	  <div class="testim_1l">
-	    <h5 class="col_1">TESTIMONAILS</h5>
-		<h2>WHAT OUR CUSTOMERS ARE <br> TALKING ABOUT</h2>
-		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
-		<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable.</p>
-		 <span class="span_1"><i class="fa fa-user-secret"></i></span>
-		 <h3>3870000</h3>
-		 <p>Agriculture projects are completed</p>
-	  </div>
-	 </div>
-	 <div class="col-md-6">
-	  <div class="testim_1r">
-	    <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2" class="" aria-current="true"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="testim_1i row">
-	    <div class="col-md-6">
-		  <div class="testim_1i1">
-		    <span class="col_1">
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			</span>
-			<img style="border-radius:50%; margin-left:20px;" src="{{url('frontend/img/10.jpg')}}" alt="abc">
-			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
-			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<h5>Eget Nulla</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
-		  </div>
-		</div>
-		<div class="col-md-6">
-		  <div class="testim_1i1">
-		    <span class="col_1">
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			</span>
-			<img style="border-radius:50%; margin-left:20px;" src="{{url('frontend/img/11.jpg')}}" alt="abc">
-			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
-			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<h5>Semp Port</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
-		  </div>
-		</div>
-	  </div>
-    </div>
-    <div class="carousel-item">
-        <div class="testim_1i row">
-	    <div class="col-md-6">
-		  <div class="testim_1i1">
-		    <span class="col_1">
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			</span>
-			<img style="border-radius:50%; margin-left:20px;" src="{{url('frontend/img/10.jpg')}}" alt="abc">
-			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
-			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<h5>Eget Nulla</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
-		  </div>
-		</div>
-		<div class="col-md-6">
-		  <div class="testim_1i1">
-		    <span class="col_1">
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			</span>
-			<img style="border-radius:50%; margin-left:20px;" src="{{url('frontend/img/11.jpg')}}" alt="abc">
-			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
-			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<h5>Semp Port</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
-		  </div>
-		</div>
-	  </div>
-    </div>
-    <div class="carousel-item">
-         <div class="testim_1i row">
-	    <div class="col-md-6">
-		  <div class="testim_1i1">
-		    <span class="col_1">
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			</span>
-			<img style="border-radius:50%; margin-left:20px;" src="{{url('frontend/img/10.jpg')}}" alt="abc">
-			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
-			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<h5>Eget Nulla</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
-		  </div>
-		</div>
-		<div class="col-md-6">
-		  <div class="testim_1i1">
-		    <span class="col_1">
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			 <i class="fa fa-star"></i>
-			</span>
-			<img style="border-radius:50%; margin-left:20px;" src="{{url('frontend/img/11.jpg')}}" alt="abc">
-			<span style="font-size:60px;" class="d-block col_1 mt-2"><i class="fa fa-quote-left"></i></span>
-			<p class="mt-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<h5>Semp Port</h5>
-			<h6 class="col_2 mb-0">Founder &amp; CEO</h6>
-		  </div>
-		</div>
-	  </div>
-    </div>
-  </div>
 
-</div>
-	  </div>
-	 </div>
-	</div>
-  </div>
-</section>
 @endsection

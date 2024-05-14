@@ -1,112 +1,45 @@
 
 @extends('Frontend.layouts.main')
 @section('main-container')
-<section id="center" class="center_o">
- <div class="container">
-  <div class="row center_o1 text-center">
-   <div class="col-md-12">
-     <h1 class="text-white">About Our Company</h1>
-	 <h5 class="normal col_4 mb-0"><a class="col_3" href="#">Home</a> <span class="col_2">/</span> <a class="col_3" href="#">Pages</a> <span class="col_3">/</span> About Us  </h5>
-   </div>
-  </div>
- </div>
-</section>
+
 
 <section id="prosp">
  <div class="container">
-   <div class="prosp_1 text-center row">
-    <div class="col-md-12">
-	 <h4>We Keep Our Promises</h4>
-	 <h1><span class="col_1">We Listen,</span> <span>You Prosper</span></h1>
-	 <p>Objectively integrate enterprise-wide strategic theme areas with functionalized <br> infrastructures, interactively productize premium technologies.</p>
-	</div>
-   </div>
-   <div class="prosp_2 row">
-    <div class="col-md-4">
-	 <div class="prosp_2i clearfix">
-	  <a href="#"><img src="{{url('Frontend/img/16.jpg')}}"  class="w-100" alt="abc"></a>
-	  <h5 class="mt-3">Plan, then do</h5>
-	  <h2>Avantage Services</h2>
-	  <p>Avantage Group is all about strategy, we’re here to inform which tactics need funding and which are drains on resources.</p>
-	  <h5 class="mb-0"><a href="#">Find out more</a></h5>
-	 </div>
-	</div>
-	<div class="col-md-4">
-	 <div class="prosp_2i clearfix">
-	  <a href="#"><img src="{{url('Frontend/img/17.jpg')}}"  class="w-100" alt="abc"></a>
-	  <h5 class="mt-3">Small tactics</h5>
-	  <h2>Our Approach</h2>
-	  <p>Avantage Group is all about strategy, we’re here to inform which tactics need funding and which are drains on resources.</p>
-	  <h5 class="mb-0"><a href="#">Find out more</a></h5>
-	 </div>
-	</div>
-	<div class="col-md-4">
-	 <div class="prosp_2i clearfix">
-	  <a href="#"><img src="{{url('Frontend/img/18.jpg')}}"  class="w-100" alt="abc"></a>
-	  <h5 class="mt-3">Proof, not promises</h5>
-	  <h2>Avantage Results</h2>
-	  <p>Avantage Group is all about strategy, we’re here to inform which tactics need funding and which are drains on resources.</p>
-	  <h5 class="mb-0"><a href="#">Find out more</a></h5>
-	 </div>
-	</div>
-   </div>
- </div>
-</section>
-
-<section id="plan">
- <div class="container">
-  <div class="plan_1 row">
-    <div class="col-md-4">
-	 <div class="plan_1i clearfix">
-	  <h2><span class="col_1">You'll Love Our</span><br>
-<span class="col_2">Business Solutions</span></h2>
-      <p>Quickly aggregate B2B users and worldwide potentialities. Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies.</p>
-	  <ul>
-	   <li><i class="fa fa-star col_1"></i> Great Prospect To Thrive</li>
-	   <li><i class="fa fa-star col_1"></i> Modern Solutions &amp; Advices</li>
-	   <li><i class="fa fa-star col_1"></i> In Trend With The Times</li>
-	   <li><i class="fa fa-star col_1"></i> Inline With Your Requirements</li>
-	   <li><i class="fa fa-star col_1"></i> Easy To Adapt Your Business To</li>
-	  </ul>
-	 </div>
-	</div>
-	<div class="col-md-4">
-	 <div class="plan_1i1 clearfix">
-       <span><i class="fa fa-rupee col_2"></i></span>
-	   <div class="plan_1i1i clearfix">
-	     <h1 class="col_1"><i class="fa fa-rupee"></i> 199</h1>
-		 <h5>Upgrade Package</h5>
-		 <h3>Business Optimization</h3>
-	   </div>
-	   <ul>
-	    <li><i class="fa fa-check col_1"></i> Busines Checkup</li>
-		<li><i class="fa fa-check col_1"></i> Proposing Changes</li>
-		<li><i class="fa fa-check col_1"></i> Marketing plan</li>
-		<li><i class="fa fa-check col_1"></i> Social Media plan</li>
-	   </ul>
-	   <h4 class="mb-0"><a href="#">Purchase now</a></h4>
-	 </div>
-	</div>
-	<div class="col-md-4">
-	 <div class="plan_1i1 plan_1i1_o clearfix">
-       <span><i class="fa fa-rupee text-white"></i></span>
-	   <div class="plan_1i1i clearfix">
-	     <h1 class="text-white"><i class="fa fa-rupee"></i> 259</h1>
-		 <h5 class="text-white">Full Package</h5>
-		 <h3 class="text-white">Business Plan</h3>
-	   </div>
-	   <ul>
-	    <li class="text-white"><i class="fa fa-check text-white"></i> Busines Checkup</li>
-		<li class="text-white"><i class="fa fa-check text-white"></i> Proposing Changes</li>
-		<li class="text-white"><i class="fa fa-check text-white"></i> Marketing plan</li>
-		<li class="text-white"><i class="fa fa-check text-white"></i> Social Media plan</li>
-	   </ul>
-	   <h4 class="mb-0"><a class="text-white" href="#">Purchase now</a></h4>
-	 </div>
-	</div>
-   </div>
- </div>
-</section>
+   
+   <!---About Section-->
+   <section id="about" class="home-section about-section" data-av-animation="animate__fadeInUp">
+    <div class="container">
+      <div class="row">
+      <div class="about-images col-12 col-lg-5">
+        <div class="w-50 float-start ">
+        <img src="{{url('frontend/img/about 2.jpg')}}" alt="About Image 1" class="img-responsive">
+      </div>
+      <div class="w-50 float-start mt-5">
+        <img src="{{url('frontend/img/about 1.jpg')}}" alt="About Image 2" class="img-responsive">
+      </div>
+      <div class="w-50 float-start  ">
+        <img src="{{url('frontend/img/about 3.jpg')}}" alt="About Image 3" class="img-responsive">
+      </div>
+      <div class="w-50 float-start">
+        <img src="{{url('frontend/img/about 4.jpg')}}" alt="About Image 4" class="img-responsive">
+      </div>
+      </div>
+      <div class="about-content col-12 col-lg-7">
+        <h3 class="mb-3 h5">ABOUT OUR MISSION</h3>
+        <h2 class="mb-5 display-5">Grow Viable<span class="colored-text"> Agriculture</span> By Linking People</h2>
+        <div class="row mb-4">
+          <div class="col-1"><span>#</span></div>
+          <div class="col-11">
+            <h4 class="fw-bold">Bringing Farmers Towards Flourishing Future</h4>
+            <p>At the heart of our mission lies the belief in the power of unity.
+				 By connecting farmers with essential services, 
+				 we nurture not only crops but also communities. </p>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+   </section>
 
 <section id="team_h">
  <div class="project_m clearfix">

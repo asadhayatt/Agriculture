@@ -1,16 +1,7 @@
 @extends('Frontend.layouts.main')
 @section('main-container')
 
-<section id="center" class="center_o">
- <div class="container">
-  <div class="row center_o1 text-center">
-   <div class="col-md-12">
-     <h1 class="text-white">Contact Us</h1>
-	 <h5 class="normal col_4 mb-0"><a class="col_3" href="#">Home</a> <span class="col_2">/</span> <a class="col_3" href="#">Pages</a> <span class="col_3">/</span> Contact Us  </h5>
-   </div>
-  </div>
- </div>
-</section>
+
 
 <section id="contact">
  <div class="container">

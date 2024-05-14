@@ -10,7 +10,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{url('Frontend/img/1.jpg')}}" class="d-block w-100" alt="...">
+      <img src="{{url('Frontend/img/main.jpg')}}" class="d-block w-100 " alt="...">
       <div class="carousel-caption d-none d-md-block">
          <h5 class="mb-3 col_4 big">The Best Agriculture Products</h5>
 		<h1 class="text-white big">Welcome To AGRIGOAL FARM </h1>
@@ -100,7 +100,7 @@
 </section>
 
 <section id="serv">
-  <div class="container">
+<div class="container">
    <div class="row serv_1 text-center mb-3">
      <div class="col-md-12">
 	   <h5 class="col_1">WHAT WE DO</h5>
@@ -108,108 +108,34 @@
 	   <span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
 	 </div>
    </div>
-   <div class="row serv_2 ">
-     <div class="col-md-3">
-	   <div class="serv_2i">
-	    <div class="serv_2i1">
-		  <h4>FRESH VEGETABLES</h4>
-		  <p class="mb-0">Lorem ipsum is simply are many variations of
-pass of majority.</p>
-		</div>
-		<div class="serv_2i2 position-relative">
-		 <div class="serv_2i2i">
-		  <div class="grid">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/6.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		 </div>
-		 <div class="serv_2i2i1 position-absolute">
-		   <span><a  href="#"><i class="fa fa-long-arrow-right"></i>  </a></span>
-		 </div>
-		</div>
-	   </div>
-	 </div>
-	 <div class="col-md-3">
-	   <div class="serv_2i">
-	    <div class="serv_2i1">
-		  <h4>AGRICULTURE PRODUCTS</h4>
-		  <p class="mb-0">Lorem ipsum is simply are many variations of
-pass of majority.</p>
-		</div>
-		<div class="serv_2i2 position-relative">
-		 <div class="serv_2i2i">
-		  <div class="grid">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/7.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		 </div>
-		 <div class="serv_2i2i1 position-absolute">
-		   <span><a  href="#"><i class="fa fa-long-arrow-right"></i>  </a></span>
-		 </div>
-		</div>
-	   </div>
-	 </div>
-	 <div class="col-md-3">
-	   <div class="serv_2i">
-	    <div class="serv_2i1">
-		  <h4>ORGANIC PRODUCTS</h4>
-		  <p class="mb-0">Lorem ipsum is simply are many variations of
-pass of majority.</p>
-		</div>
-		<div class="serv_2i2 position-relative">
-		 <div class="serv_2i2i">
-		  <div class="grid">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/8.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		 </div>
-		 <div class="serv_2i2i1 position-absolute">
-		   <span><a  href="#"><i class="fa fa-long-arrow-right"></i>  </a></span>
-		 </div>
-		</div>
-	   </div>
-	 </div>
-	 <div class="col-md-3">
-	   <div class="serv_2i">
-	    <div class="serv_2i1">
-		  <h4>FARMING PRODUCTS</h4>
-		  <p class="mb-0">Lorem ipsum is simply are many variations of
-pass of majority.</p>
-		</div>
-		<div class="serv_2i2 position-relative">
-		 <div class="serv_2i2i">
-		  <div class="grid">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/9.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		 </div>
-		 <div class="serv_2i2i1 position-absolute">
-		   <span><a  href="#"><i class="fa fa-long-arrow-right"></i>  </a></span>
-		 </div>
-		</div>
-	   </div>
-	 </div>
-   </div>
-  </div>
-</section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="service-block" style="border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);">
+        <img src="{{url('Frontend/img/icon 1.png')}}" alt="Image">
+        <h3>Planting</h3>
+        <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
 
-<section id="type">
-  <div class="type_m">
-    <div class="container">
-     <div class="row type_1 text-center">
-     <div class="col-md-12">
-	  <h5 class="col_1 mt-4 mb-3">MODERN AGRICULTURE TYPES</h5>
-	  <h2 class="text-white">AGRICULTURE MATTERS TO THE <br> FUTURE OF DEVELOPMENT</h2>
-	 </div>
-   </div>
-  </div>
-  </div>
-</section>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-block" style="border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);">
+        <img src="{{url('Frontend/img/icon 1.png')}}" alt="Image">
+        <h3>Growing</h3>
+        <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
 
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-block" style="border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);">
+        <img src="{{url('Frontend/img/icon 1.png')}}" alt="Image">
+        <h3>Harvesting</h3>
+        <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <section id="testim">
   <div class="container">
     <div class="row testim_1">

@@ -1,5 +1,5 @@
 <section id="footer">
-  <div class="container">
+  <div class="container" >
      <div class="row footer_1">
 	   <div class="col-md-3">
 	    <div class="footer_1i">
