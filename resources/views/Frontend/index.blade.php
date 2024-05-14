@@ -110,25 +110,27 @@
    </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
-      <div class="service-block" style="border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);">
-        <img src="{{url('Frontend/img/icon 1.png')}}" alt="Image">
+    <div class="col-md-4 p-1 text-center ">
+      <div class="service-block box_style" style="border-radius:10px;border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);padding-top:20px">
+        <img src="{{asset('Frontend/img/tractor-logo.png')}}" style="width:50px; height:50px" alt="Image">
         <h3>Planting</h3>
         <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
 
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="service-block" style="border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);">
-        <img src="{{url('Frontend/img/icon 1.png')}}" alt="Image">
+    <div class="col-md-4 p-1 text-center ">
+      <div class="service-block box_style" style="border-radius:10px;border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);padding-top:20px">
+                <img src="{{asset('Frontend/img/tractor-logo.png')}}" style="width:50px; height:50px" alt="Image">
+
         <h3>Growing</h3>
         <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
 
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="service-block" style="border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);">
-        <img src="{{url('Frontend/img/icon 1.png')}}" alt="Image">
+    <div class="col-md-4 p-1 text-center ">
+      <div class="service-block box_style" style="border-radius:10px;border: 1px solid #333; box-shadow: 0 0 20px rgba(109,143,100, 1);padding-top:20px">
+                <img src="{{asset('Frontend/img/tractor-logo.png')}}" style="width:50px; height:50px" alt="Image">
+
         <h3>Harvesting</h3>
         <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
       </div>

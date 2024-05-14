@@ -13,7 +13,7 @@
    </div>
    <div class="col-md-3">
     <div class="top_1m text-center">
-	  <h3 class="mb-0" style="line-height:0.6em;"><img src="{{url('Frontend/img/logo.png')}}" style="margin-bottom:10px;" class="d-inline-block" alt="logo image"></h3>
+	  <h3 class="mb-0" style="line-height:0.6em;"><img src="{{url('Frontend/img/logo.png')}}" style="margin-bottom:10px;width:248px;height:81px;object-fit:cover" class="d-inline-block" alt="logo image"></h3>
 	</div>
    </div>
    <div class="col-md-4">
@@ -34,27 +34,27 @@
 <section id="header">
 <nav class="navbar navbar-expand-md  navbar-center navbar-light" id="navbar_sticky">
   <div class="container">
-  <a class="navbar-brand col_1" href="{{url('/')}}"><span style="margin-bottom:10px;" class="d-inline-block"><i class="fa fa-leaf col_1"></i></span>
- AGRIGOAL <br><span style="margin-left:40px;" class="col_2 font_16 normal">AGRICULTURE FARM</span></a>
+  <a class="navbar-brand col_1" href="{{url('/')}}">
+    <img src="{{url('Frontend/img/logo.png')}}" style="margin-top:10px;margin-bottom:10px;width:228px;height:61px;object-fit:cover" class="d-inline-block" alt="logo image">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav mb-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{url('/')}}"><span class="nav_sample">Home</span></a>
         </li>
 
 		<li class="nav-item">
-          <a class="nav-link"  href="{{url('/about')}}">About Us</a>
+          <a class="nav-link"  href="{{url('/about')}}"><span class="nav_sample">About Us</span></a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="{{url('/services')}}">Services</a>
+          <a class="nav-link" href="{{url('/services')}}"><span class="nav_sample">Services</span></a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="{{url('/contact')}}">Contact Us</a>
+          <a class="nav-link" href="{{url('/contact')}}"><span class="nav_sample">Contact Us</span></a>
         </li>
-  
+
 		<li class="nav-link"><a data-bs-target="#exampleModal2" data-bs-toggle="modal" href="#"><i class="fa fa-search"></i></a>  </li>
 		<div class="modal fade" id="exampleModal2" tabindex="-1"  style="display: none; top: 20px;" aria-hidden="true">
 		  <div class="modal-dialog">
