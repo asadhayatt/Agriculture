@@ -6,7 +6,7 @@
 		 <h4 class="text-white">ABOUT</h4>
 		 <hr style="width:60px; background-color: #eddd5e; height:3px;">
 		 <p class="col_3">Agriconnect is a digital platform revolutionizing the agricultural industry by seamlessly connecting farmers with vehicle owners and service providers.</p>
-		 
+
 		</div>
 	   </div>
 	   <div class="col-md-4">
@@ -18,7 +18,7 @@
 		 <h6><a class="text-light" href="#">Contact</a></h6>
 		</div>
 	   </div>
-	   
+
 	   <div class="col-md-4">
 	  <div class="footer_1i3 clearfix">
 	   <h4 class="text-white big">CONTACT</h4>
@@ -81,6 +81,7 @@ function myFunction() {
 }
 </script>
 
+@include('sweetalert::alert')
 </body>
 
 </html>

@@ -30,6 +30,23 @@ Route::get('/gallery',[GalleryController::class,'index']);
 Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
 Route::get('/new-service',[VehicleController::class,'index'])->name('index');
-Route::post('/new-service',[VehicleController::class,'create']);
+Route::post('/store-ad',[VehicleController::class,'create']);
 Route::get('/details/{id}',[ServicesController::class,'details']);
-Route::get('/admin',[AdminController::class,'index']);
+Route::get('/{any}',function(){
+    return view('Frontend.errors.404');
+});
+
+
+// ---------------------------------------------
+// Admin Routes
+// ---------------------------------------------
+Route::prefix('/admin')->group(function () {
+
+    Route::get('/dashboard',[AdminController::class,'index']);
+    Route::get('/table',function(){
+        return 'Table Page';
+    });
+
+});
+
+

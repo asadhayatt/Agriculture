@@ -12,7 +12,7 @@
 		<div class="row quote_2 mt-3">
 		<div class="col-md-6">
 		<div class="quote_2l">
-        <form action="{{ url('/new-service') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ url('/store-ad') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <input placeholder="Vehicle Name" class="form-control" type="text" name="vehiclename">
             </div>
@@ -38,7 +38,7 @@
             <div class="row quote_2 mt-4">
             <div class="col-md-6">
             <div class="quote_2l">
-                <input type="file" placeholder="Upload a file" name="image"  required>
+                <input type="file" placeholder="Upload a file" name="image" >
             </div>
             </div>
             </div>
