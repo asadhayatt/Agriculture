@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Vehicle;
-
 class VehicleController extends Controller
 {
     /**
@@ -22,18 +21,27 @@ class VehicleController extends Controller
      */
     public function create(Request $request)
     {
-       
-    
+      $imagename= ""; 
+    if($request->hasfile('image')){
+        $image = $request->file('image');
+        $imagename = time() . '.' . $image->getClientOriginalExtension(); 
+        $destinationPath = public_path('/Frontend/services');
+        $image->move($destinationPath, $imagename);
+
         $vehicle = new Vehicle();
         $vehicle->vehiclename =$request->vehiclename;
         $vehicle->type =$request->type;
-        $vehicle->image =$request->image;
+        $vehicle->image ='Frontend/services/'.$imagename;
         $vehicle->price =$request->price;
         $vehicle->weight =$request->weight;
         $vehicle->save();
-        return redirect(route('index'));
-
+        return redirect('/services');
+    } 
+    else {
+        return redirect()->back();
     }
+    }
+    
 
     /**
      * Store a newly created resource in storage.

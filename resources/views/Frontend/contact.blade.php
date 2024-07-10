@@ -1,44 +1,6 @@
 @extends('Frontend.layouts.main')
 @section('main-container')
 
-
-
-<section id="contact">
- <div class="container">
-  <div class="row contact_1">
-    <div class="col-md-3">
-	 <div class="contact_1i">
-	  <h3>SEMPER</h3>
-	  <p class="mb-0">12 Zexas East Mills<br>
-info@gmail.com<br>
-123 456 7890</p>
-	 </div>
-	</div>
-	<div class="col-md-3">
-	 <div class="contact_1i">
-	  <h3>PORTA</h3>
-	  <p class="mb-0">12 Zexas East Mills<br>
-info@gmail.com<br>
-123 456 7890</p>
-	 </div>
-	</div>
-	<div class="col-md-3">
-	 <div class="contact_1i">
-	  <h3>ENGLAND</h3>
-	  <p class="mb-0">12 Zexas East Mills<br>
-info@gmail.com<br>
-123 456 7890</p>
-	 </div>
-	</div>
-	<div class="col-md-3">
-	 <div class="contact_1i">
-	  <h3>INDIA</h3>
-	  <p class="mb-0">12 Zexas East Mills<br>
-info@gmail.com<br>
-123 456 7890</p>
-	 </div>
-	</div>
-  </div>
   <div class="row contact_2 mt-5">
     <div class="col-md-6">
 	 <div class="contact_2l">
@@ -92,7 +54,6 @@ info@gmail.com<br>
 		<h3>HAVE QUESTION?</h3>
 		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
 		<p>There are many variations of passages available but the majority have suffered alteration in some form by inject humour or donec vel erat sollicitudin, dapibus dui at, porttitor sem.</p>
-		 <h5><a class="button_1" href="#">Learn More</a></h5>
 	 </div>
 	</div>
 	

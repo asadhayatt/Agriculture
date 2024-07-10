@@ -22,7 +22,7 @@
 
 </style>
 <div class=" card-container">
-		<img src="{{url('Frontend/img/img 3.jpg')}}" class="image" alt="Product Image">
+		<img src="{{asset($item->image)}}" class="image" alt="Product Image">
 		<div class="data">
     <span class="product-catagory">{{ $item->type }}</span>
                 <h4><a href="">{{ $item->vehiclename }}</a></h4>

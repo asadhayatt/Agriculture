@@ -9,7 +9,7 @@ use App\Http\Controllers\Frontend\IndexController;
 use App\Http\Controllers\Frontend\PortfolioController;
 use App\Http\Controllers\Frontend\ServicesController;
 use App\Http\Controllers\Backend\VehicleController;
-
+use App\Http\Controllers\Backend\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +32,4 @@ Route::get('/services',[ServicesController::class,'index']);
 Route::get('/new-service',[VehicleController::class,'index'])->name('index');
 Route::post('/new-service',[VehicleController::class,'create']);
 Route::get('/details/{id}',[ServicesController::class,'details']);
+Route::get('/admin',[AdminController::class,'index']);

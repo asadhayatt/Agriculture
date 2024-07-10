@@ -122,12 +122,11 @@
 	    <h5 class="col_1">THE BEST COMPANY</h5>
 		<h2>WE OFFER BEST AGRICULTURE SERVICES</h2>
 		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
-		<p class="mt-3"><i style="margin-right:5px;" class="fa fa-check col_1"></i> Every employee wears a photo ID badge.</p>
-		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i> Mobiles are custom wrapped for easy identification.</p>
-		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i> We are a fully insured nationally ranked brand.</p>
-		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i> All work is backed by our exclusive “Streak-Free Guarantee”.</p>
-		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i> We offer multiple services to maintain your home.</p>
-		<h5 class="mb-0 mt-4"><a class="button_1" href="#">Read More  </a></h5>
+		<p class="mt-3"><i style="margin-right:5px;" class="fa fa-check col_1"></i>Machinery Rental Tractor Services</p>
+		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i> Loading Car Operations.</p>
+		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i>Agricultural Vehicle Services</p>
+		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i>  Farm Equipment Rental.</p>
+		<p><i style="margin-right:5px;" class="fa fa-check col_1"></i> We offer multiple services to maintain your Agriculture.</p>
 	 </div>
    </div>
    <div class="col-md-6">
@@ -148,7 +147,7 @@
   <div class="connect_1 row">
     <div class="col-md-10">
 	 <div class="connect_1l clearfix">
-	  <p class="text-white mb-0">We are a landscaping company specialize in residential and commercial landscaping started in 1999 in New York and in 2008 in Los Angeles.</p>
+	  <p class="text-white mb-0">Share your expertise, showcase your services, and grow your business - post your services on Agriconnect today</p>
 	 </div>
 	</div>
 	<div class="col-md-2">
@@ -160,9 +159,9 @@
    <div class="connect_2 row">
      @foreach ($vehicles as $item)
         <div class="product-card">
-            <div class="badge">Available</div>
+            <div class="badge">available</div>
             <div class="product-tumb">
-                <img src="{{url('Frontend/img/7.jpg')}}" alt="">
+                <img src="{{asset($item->image)}}" alt="">
             </div>
             <div class="product-details">
                 <span class="product-catagory">{{ $item->type }}</span>
@@ -172,7 +171,7 @@
                 <div class="product-bottom-details">
                     <div class="product-price">Rs.{{ $item->price }}</div>
                     <div class="btn_style text-end">
-                        <a href="{{url('/details', $item->id)}}"><button class="btn btn-warning">Book Now</button></a>
+                        <a href="{{url('/details', $item->id)}}"><button class="btn btn-warning">See Details</button></a>
                     </div>
                 </div>
             </div>
@@ -183,41 +182,7 @@
  </div>
 </section>
 
-<section id="grow">
-  <div class="container">
-     <div class="row grow_1">
-	   <div class="col-md-5">
-	    <div class="grow_1l">
-		  <div class="grid clearfix">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('frontend/img/15.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		</div>
-	   </div>
-	   <div class="col-md-7">
-	    <div class="grow_1r">
-		  <h5 class="col_1">FRESH PRODUCTS</h5>
-		<h2>GROWING PRODUCTS</h2>
-		<h4>48 YEARS
-OF EXPERIENCE</h4>
-		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
-		<p>Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo sit met entum estibu dignissim posuere cubilia durae. Leo sit met entum cubilia crae onec.</p>
-		<h6>Agriculture <span class="col_2 float-end">64%</span></h6>
-		<div class="progress-bar" style="background-color:#f5f0e9;overflow:hidden;border-radius:7px;margin-top:20px;">
-			<div class="progress" style="background-color: rgb(91, 140, 81); height: 13px; overflow: hidden; border-radius: 7px; width: 64%;">
-			</div>
-		</div>
-		<h6 class="mt-4">Organic <span class="col_2 float-end">82%</span></h6>
-		<div class="progress-bar" style="background-color:#f5f0e9;overflow:hidden;border-radius:7px;margin-top:20px;">
-			<div class="progress" style="background-color: rgb(91, 140, 81); height: 13px; overflow: hidden; border-radius: 7px; width: 82%;">
-			</div>
-		</div>
-		</div>
-	   </div>
-	 </div>
-  </div>
-</section>
+
 
 
 @endsection

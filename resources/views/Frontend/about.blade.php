@@ -156,50 +156,15 @@
  </div>
 </section>
 
-<section id="grow">
-  <div class="container">
-     <div class="row grow_1">
-	   <div class="col-md-5">
-	    <div class="grow_1l">
-		  <div class="grid clearfix">
-		  <figure class="effect-jazz mb-0">
-			<a href="#"><img src="{{url('Frontend/img/15.jpg')}}" class="w-100" alt="img25"></a>
-		  </figure>
-	  </div>
-		</div>
-	   </div>
-	   <div class="col-md-7">
-	    <div class="grow_1r">
-		  <h5 class="col_1">FRESH PRODUCTS</h5>
-		<h2>GROWING PRODUCTS</h2>
-		<h4>48 YEARS
-OF EXPERIENCE</h4>
-		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
-		<p>Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo sit met entum estibu dignissim posuere cubilia durae. Leo sit met entum cubilia crae onec.</p>
-		<h6>Agriculture <span class="col_2 float-end">64%</span></h6>
-		<div class="progress-bar" style="background-color:#f5f0e9;overflow:hidden;border-radius:7px;margin-top:20px;">
-			<div class="progress" style="background-color: rgb(91, 140, 81); height: 13px; overflow: hidden; border-radius: 7px; width: 64%;">
-			</div>
-		</div>
-		<h6 class="mt-4">Organic <span class="col_2 float-end">82%</span></h6>
-		<div class="progress-bar" style="background-color:#f5f0e9;overflow:hidden;border-radius:7px;margin-top:20px;">
-			<div class="progress" style="background-color: rgb(91, 140, 81); height: 13px; overflow: hidden; border-radius: 7px; width: 82%;">
-			</div>
-		</div>
-		</div>
-	   </div>
-	 </div>
-  </div>
-</section>
 
-<section id="qual" class="mt-0">
+
+<section id="qual" class="mt-0 ">
   <div class="type_m">
     <div class="container">
      <div class="row type_1 text-center">
      <div class="col-md-12">
 	  <h2 class="text-white">PROVIDE YOU THE HIGHEST QUALITY PRODUCTS THAT MEETS YOUR EXPECTATION</h2>
 	  <p class="text-light mt-3">Adipisie cing elit sed eiusmod tempor on labore et dolore. Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-	  <h5 class="mb-0 mt-4"><a class="button" href="#">Discover More  </a></h5>
 	 </div>
    </div>
   </div>
