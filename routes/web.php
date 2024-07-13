@@ -41,9 +41,7 @@ Route::get('/{any}',function(){
 // Admin Routes
 // ---------------------------------------------
 Route::prefix('/admin')->group(function () {
-    Route::group{
-        Route::get('/login',[AdminController::class,'login']);
-    };
+   
 
     Route::get('/dashboard',[AdminController::class,'index']);
     Route::get('/table',function(){
