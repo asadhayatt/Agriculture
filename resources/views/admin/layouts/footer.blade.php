@@ -36,6 +36,8 @@
 <script src="{{url('Admin/js/dashboard.js')}}"></script>
 <script src="{{url('Admin/js/Chart.roundedBarCharts.js')}}"></script>
 <!-- End custom js for this page-->
+
+@include('sweetalert::alert')
 </body>
 
 </html>

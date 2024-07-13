@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\PortfolioController;
 use App\Http\Controllers\Frontend\ServicesController;
 use App\Http\Controllers\Backend\VehicleController;
 use App\Http\Controllers\Backend\AdminController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,4 +33,31 @@ Route::get('/services',[ServicesController::class,'index']);
 Route::get('/new-service',[VehicleController::class,'index'])->name('index');
 Route::post('/new-service',[VehicleController::class,'create']);
 Route::get('/details/{id}',[ServicesController::class,'details']);
-Route::get('/admin',[AdminController::class,'index']);
+Route::get('/login',function(){
+    if(Auth::user()){
+        return redirect()->to('/admin/dashboard');
+    }else{
+        return redirect()->to('/admin/login');
+    }
+});
+
+// Admin Routes
+
+Route::prefix('/admin')->group(function () {
+
+    // Login Routes
+    Route::get('/login',[AdminController::class,'showLoginPage'])->name('login');
+    Route::post('/verify-login',[AdminController::class,'verifyLoginInfo']);
+    Route::get('/register',[AdminController::class,'showRegisterPage']);
+    Route::post('/store-register-info',[AdminController::class,'storeRegisterInfo']);
+    Route::get('/logout',function(){
+        Auth::logout();
+        return redirect()->to('/login');
+    });
+
+
+    // Admin Pages Routes
+    Route::group(['middleware' => ['auth']], function () {
+        Route::get('/dashboard',[AdminController::class,'index']);
+    });
+});
