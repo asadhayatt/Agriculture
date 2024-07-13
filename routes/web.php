@@ -53,7 +53,7 @@ Route::prefix('/admin')->group(function () {
     Route::get('/logout',function(){
         Auth::logout();
         return redirect()->to('/login');
-    });sasd
+    });
 
 
     // Admin Pages Routes
@@ -61,4 +61,3 @@ Route::prefix('/admin')->group(function () {
         Route::get('/dashboard',[AdminController::class,'index']);
     });
 });
-s
