@@ -25,40 +25,43 @@ class VehicleController extends Controller
     public function create(Request $request)
     {
 
-        $vehicle = new Vehicle();
-        $vehicle->vehiclename =$request->vehiclename;
-        $vehicle->type =$request->type;
-        $vehicle->price =$request->price;
-        $vehicle->weight =$request->weight;
-        $vehicle->save();
-
-        // toast('Ad Created Successfully!','success');
-        // alert()->error('ErrorAlert','Lorem ipsum dolor sit amet.');
-        alert()->error('Ad Created Failed!','Something went wrong !');
-
-        return redirect('/services');
-
-        // return $request->all();
-    //   $imagename= "";
-    // if($request->hasfile('image')){
-    //     $image = $request->file('image');
-    //     $imagename = time() . '.' . $image->getClientOriginalExtension();
-    //     $destinationPath = public_path('/Frontend/services');
-    //     $image->move($destinationPath, $imagename);
-
-    //     $vehicle = new Vehicle();
+    //    $vehicle = new Vehicle();
     //     $vehicle->vehiclename =$request->vehiclename;
     //     $vehicle->type =$request->type;
-    //     $vehicle->image ='Frontend/services/'.$imagename;
     //     $vehicle->price =$request->price;
     //     $vehicle->weight =$request->weight;
     //     $vehicle->save();
-    //     return redirect('/services');
-    // }
-    // else {
-    //     return redirect()->back();
-    // }
+
+        // toast('Ad Created Successfully!','success');
+        // alert()->error('ErrorAlert','Lorem ipsum dolor sit amet.');
+       
+
+        // return $request->all();
+      $imagename= "";
+    if($request->hasfile('image')){
+        $image = $request->file('image');
+        $imagename = time() . '.' . $image->getClientOriginalExtension();
+        $destinationPath = public_path('/Frontend/services');
+        $image->move($destinationPath, $imagename);
+
+        $vehicle = new Vehicle();
+        $vehicle->vehiclename =$request->vehiclename;
+        $vehicle->type =$request->type;
+        $vehicle->image ='Frontend/services/'.$imagename;
+        $vehicle->price =$request->price;
+        $vehicle->weight =$request->weight;
+        $vehicle->save();
+        alert()->success('Ad Created successfully!','Your Ad is live !');
+
+        
+        return redirect('/services');
     }
+    else {
+        alert()->error('Ad Created Failed!','Something went wrong !');
+        return redirect()->back();
+    }
+    }
+
 
 
     /**
