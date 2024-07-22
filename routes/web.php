@@ -27,6 +27,7 @@ Route::get('/',[IndexController::class,'index']);
 Route::get('/about',[AboutController::class,'index']);
 Route::get('/blog',[BlogController::class,'index']);
 Route::get('/contact',[ContactController::class,'index']);
+Route::post('/store-contact-us',[ContactController::class,'storeContact']);
 Route::get('/gallery',[GalleryController::class,'index']);
 Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
@@ -59,5 +60,7 @@ Route::prefix('/admin')->group(function () {
     // Admin Pages Routes
     Route::group(['middleware' => ['auth']], function () {
         Route::get('/dashboard',[AdminController::class,'index']);
+        Route::get('/contact-us',[AdminController::class,'contactUS']);
+        Route::get('/delete-contact-us/{id}',[AdminController::class,'deleteContactUS']);
     });
 });

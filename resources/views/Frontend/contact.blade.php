@@ -4,47 +4,45 @@
   <div class="row contact_2 mt-5">
     <div class="col-md-6">
 	 <div class="contact_2l">
-         <h5 class="col_4">CONTACT WITH US</h5>
-		<h3 class="text-white">WRITE US A MESSAGE</h3>
-		<span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
-		<div class="row quote_2 mt-3">
-		<div class="col-md-6">
-		<div class="quote_2l">
-		 <input placeholder="Name" class="form-control" type="text">
-		</div>
-		</div>
-		<div class="col-md-6">
-		<div class="quote_2l">
-		 <input placeholder="Email Address" class="form-control" type="text">
-		</div>
-		</div>
-		</div>
-		<div class="row quote_2 mt-4">
-		<div class="col-md-6">
-		<div class="quote_2l">
-		 <input placeholder="Phone Number" class="form-control" type="text">
-		</div>
-		</div>
-		<div class="col-md-6">
-		<div class="quote_2l">
-		 <input placeholder="Website" class="form-control" type="text">
-		</div>
-		</div>
-		</div>
-		<div class="row quote_2 mt-4">
-		<div class="col-md-12">
-		<div class="quote_2l">
-		 <textarea style="height:200px;" placeholder="Write a Message" class="form-control"></textarea>
-		</div>
-		</div>
-		</div>
-		<div class="row quote_2 mt-3">
-		<div class="col-md-12">
-		<div class="quote_2l">
-		  <h5 class="d-inline-block mt-3 mb-0"><a class="button_1" href="#"> Send Message </a></h5>
-		</div>
-		</div>
-		</div>
+        <form action="{{ url('/store-contact-us') }}" method="POST">
+            @csrf
+                    <h5 class="col_4">CONTACT WITH US</h5>
+                    <h3 class="text-white">WRITE US A MESSAGE</h3>
+                    <span style="font-size:40px;"><i class="fa fa-leaf col_4"></i></span>
+                    <div class="row quote_2 mt-3">
+                    <div class="col-md-12">
+                    <div class="quote_2l">
+                    <input name="name" placeholder="Name" class="form-control" type="text">
+                    </div>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                    <div class="quote_2l">
+                    <input name="email" placeholder="Email Address" class="form-control" type="email">
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row quote_2 mt-4">
+                    <div class="col-md-12">
+                    <div class="quote_2l">
+                    <input name="phone" placeholder="Phone Number" class="form-control" type="number">
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row quote_2 mt-4">
+                    <div class="col-md-12">
+                    <div class="quote_2l">
+                    <textarea name="message" style="height:200px;" placeholder="Write a Message" class="form-control"></textarea>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="row quote_2 mt-3">
+                    <div class="col-md-12">
+                    <div class="quote_2l">
+                    <h5 class="d-inline-block mt-3 mb-0"><button type="submit" class="button_1" href="#"> Send Message </button></h5>
+                    </div>
+                    </div>
+                    </div>
+    </form>
 	 </div>
 	</div>
 	<div class="col-md-6">
@@ -56,7 +54,7 @@
 		<p>There are many variations of passages available but the majority have suffered alteration in some form by inject humour or donec vel erat sollicitudin, dapibus dui at, porttitor sem.</p>
 	 </div>
 	</div>
-	
+
   </div>
   <div class="row contact_3 mt-5">
     <div class="col-md-12">

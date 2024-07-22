@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\ContactUs;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +13,20 @@ use Illuminate\Support\Facades\Validator;
 class AdminController extends Controller
 {
     public function index(){
-        return view('admin.index');
+        return view('admin.adminTabs.dashboard');
+    }
+
+    public function contactUS(){
+        $contact = ContactUs::get();
+
+        // return view('admin.adminTabs.contactUs',compact('contact'));
+        return view('admin.adminTabs.contactUs',get_defined_vars());
+    }
+
+    public function deleteContactUS($id){
+        ContactUs::find($id)->delete();
+        return redirect()->to('/admin/contact-us');
+       
     }
 
     public function showLoginPage(){
@@ -55,7 +69,7 @@ class AdminController extends Controller
         [
             'name' => 'required | min:3',
             'email' => 'required | email | unique:users,email',
-            'password' => 'required | min:8 '   
+            'password' => 'required | min:8 '
         ]);
         if($validate->fails()){
             toast($validate->errors()->all()[0],'error');
