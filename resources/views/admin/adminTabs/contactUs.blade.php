@@ -32,9 +32,7 @@
                         <td>{{ $contact->phone }}</td>
                         <td>{{ $contact->message }}</td>
                         <td>
-                            <a href="{{ url('/admin/delete-contact-us/'. $contact->id ) }}" title="Edit" class="badge badge-primary">Edit</a>
-                            <a href="{{ url('/admin/delete-contact-us/'. $contact->id ) }}" title="Delete" class="badge badge-danger">Delete</a>
-                        </td>
+                            <a href="{{ url('/admin/delete-contact-us/'. $contact->id ) }}" title="Delete" class="badge badge-danger">Delete</a></td>
                     </tr>
                 @endforeach
             </tbody>
