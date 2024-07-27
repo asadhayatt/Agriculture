@@ -48,6 +48,18 @@ Route::prefix('/admin')->group(function () {
         return 'Table Page';
     });
 
+<<<<<<< Updated upstream
+=======
+
+    // Admin Pages Routes
+    Route::group(['middleware' => ['auth']], function () {
+        Route::get('/dashboard',[AdminController::class,'index']);
+        Route::get('/contact-us',[AdminController::class,'contactUS']);
+        Route::get('/delete-contact-us/{id}',[AdminController::class,'deleteContactUS']);
+        Route::get('post-ads' ,[AdminController::class,'postAds']);
+        Route::get('/edit-post-ads' ,[AdminController::class,'editPostAds']);
+    });
+>>>>>>> Stashed changes
 });
 
 
