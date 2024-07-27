@@ -16,12 +16,11 @@ use Illuminate\Support\Facades\Validator;
 class AdminController extends Controller
 {
     public function index(){
-<<<<<<< Updated upstream
+
     return view('admin.index');
 }
-=======
-        return view('admin.adminTabs.dashboard');
-    }
+
+     
     public function postAds(){
         $post = PostAds::get();
         return view('admin.adminTabs.postAds',compact('post'));
@@ -108,6 +107,6 @@ class AdminController extends Controller
 
         }
 
+    }
 
->>>>>>> Stashed changes
-}
+
