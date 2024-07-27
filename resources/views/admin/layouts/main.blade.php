@@ -9,13 +9,27 @@
 
 @include('admin.layouts.header')
 
-{{-- navbar --}}
+@include('admin.layouts.navbar')
 
-@yield('main-container')
+<body>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper">
 
-@include('admin.layouts.footer')
+            @include('admin.layouts.sidebar')
+
+            <div class="main-panel">
+
+                @yield('main-container')
+
+            </div>
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    @include('admin.layouts.footer')
 
 
+    @include('sweetalert::alert')
 
 </body>
 

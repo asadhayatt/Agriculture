@@ -27,6 +27,7 @@ Route::get('/',[IndexController::class,'index']);
 Route::get('/about',[AboutController::class,'index']);
 Route::get('/blog',[BlogController::class,'index']);
 Route::get('/contact',[ContactController::class,'index']);
+Route::post('/store-contact-us',[ContactController::class,'storeContact']);
 Route::get('/gallery',[GalleryController::class,'index']);
 Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
@@ -36,54 +37,40 @@ Route::get('/details/{id}',[ServicesController::class,'details']);
 Route::get('/login',function(){
     if(Auth::user()){
         return redirect()->to('/admin/dashboard');
-
-    }
-    else{
+    }else{
         return redirect()->to('/admin/login');
     }
 });
 
 
-// ---------------------------------------------
 // Admin Routes
-// ---------------------------------------------
+
 Route::prefix('/admin')->group(function () {
-    // login Rutes
+
+    // Login Routes
     Route::get('/login',[AdminController::class,'showLoginPage'])->name('login');
     Route::post('/verify-login',[AdminController::class,'verifyLoginInfo']);
-    Route::get('/register',[AdminController::class, 'ShowRegisterPage']);
-    Route::post('/store-register-info',[AdminController::class, 'storeRegisterInfo']);
+    Route::get('/register',[AdminController::class,'showRegisterPage']);
+    Route::post('/store-register-info',[AdminController::class,'storeRegisterInfo']);
     Route::get('/logout',function(){
         Auth::logout();
         return redirect()->to('/login');
-                  
     });
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
+
 
     // Admin Pages Routes
     Route::group(['middleware' => ['auth']], function () {
         Route::get('/dashboard',[AdminController::class,'index']);
         Route::get('/contact-us',[AdminController::class,'contactUS']);
         Route::get('/delete-contact-us/{id}',[AdminController::class,'deleteContactUS']);
+
         Route::get('post-ads' ,[AdminController::class,'postAds']);
         Route::get('/edit-post-ads' ,[AdminController::class,'editPostAds']);
     });
->>>>>>> Stashed changes
+
 });
-=======
 
-   //    Admin page Route
-    Route::group(['middleware' =>['auth']], function(){
-        Route::get('/login',function(){
-            return redirect()->to('/login');
-        });
-        Route::get('/dashboard',[AdminController::class,'index']);
-    });
-   
-    });
->>>>>>> Stashed changes
 
+  
 
