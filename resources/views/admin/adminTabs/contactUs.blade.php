@@ -21,9 +21,8 @@
             </thead>
             <tbody>
                 @php
-                    $srNo = 1;    
+                    $srNo = 1;
                 @endphp
-
                 @foreach ($contact as $contact)
                     <tr>
                         <td>{{ $srNo++ }}</td>
