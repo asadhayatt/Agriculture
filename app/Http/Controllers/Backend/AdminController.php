@@ -4,25 +4,16 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
 use App\Models\ContactUs;
 use App\Models\PostAds;
 use App\Models\User;
 >>>>>>> Stashed changes
-=======
-use App\Models\User;
->>>>>>> Stashed changes
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
-
 
 class AdminController extends Controller
 {
     public function index(){
-<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     return view('admin.index');
 }
@@ -117,70 +108,4 @@ class AdminController extends Controller
 
 
 >>>>>>> Stashed changes
-=======
-        
-     toast('Login successfull !','success');
-     return view('admin.index');
 }
- public function showLoginPage(){
-    return view ('admin.login.login');
- }
- public function verifyLoginInfo(Request $request){
-    // return request
-    $validate = Validator::make($request->all(),[
-        'email' => 'required|email',
-        'password' => 'required|min:8'
-    ]);
-    if($validate->fails()){
-        toast($validate->errors()->all()[0],'error');
-        return redirect()->back()->with('error',$validate->errors()->all()[0])->withInput();
-
-
- }
- $data = $request->only('email','password');
- $verify = Auth::attempt($data);
- if($verify){
-     return redirect()->to('/admin/dashboard');
- }else{
-     toast('No Record Found !','error');
-     return redirect()->back()->with('error','No Record Found !')->withInput();
-
- }
->>>>>>> Stashed changes
-}
-
-
- public function showRegisterPage(){
-    return view('admin.login.register');
- }
- 
- public function storeRegisterInfo(Request $request){
-
-    $validate = Validator::make($request->all(),
-    [
-        'name' => 'required | min:3',
-        'email' => 'required | email | unique:users,email',
-        'password' => 'required | min:8'
-    ]);
-    if($validate->fails()){
-        toast($validate->errors()->all()[0],'error');
-            return redirect()->back()->with('error',$validate->errors()->all()[0])->withInput();
- }
- $user = new User();
- $user->name = $request->name;
- $user->email = $request->email;
- $user->password = Hash::make($request->password);
- $user->type =1;
- $user->status =1;
- $user->save();
-
- $data =$request->only('email', 'password');
-
- Auth::attempt($data);
- return redirect()->to('/admin/dashboard');
-
-
-
-
-}
-};
