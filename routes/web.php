@@ -10,6 +10,7 @@ use App\Http\Controllers\Frontend\PortfolioController;
 use App\Http\Controllers\Frontend\ServicesController;
 use App\Http\Controllers\Backend\VehicleController;
 use App\Http\Controllers\Backend\AdminController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,8 +33,14 @@ Route::get('/services',[ServicesController::class,'index']);
 Route::get('/new-service',[VehicleController::class,'index'])->name('index');
 Route::post('/store-ad',[VehicleController::class,'create']);
 Route::get('/details/{id}',[ServicesController::class,'details']);
-Route::get('/{any}',function(){
-    return view('Frontend.errors.404');
+Route::get('/login',function(){
+    if(Auth::user()){
+        return redirect()->to('/admin/dashboard');
+
+    }
+    else{
+        return redirect()->to('/admin/login');
+    }
 });
 
 
@@ -41,13 +48,18 @@ Route::get('/{any}',function(){
 // Admin Routes
 // ---------------------------------------------
 Route::prefix('/admin')->group(function () {
-   
-
-    Route::get('/dashboard',[AdminController::class,'index']);
-    Route::get('/table',function(){
-        return 'Table Page';
+    // login Rutes
+    Route::get('/login',[AdminController::class,'showLoginPage'])->name('login');
+    Route::post('/verify-login',[AdminController::class,'verifyLoginInfo']);
+    Route::get('/register',[AdminController::class, 'ShowRegisterPage']);
+    Route::post('/store-register-info',[AdminController::class, 'storeRegisterInfo']);
+    Route::get('/logout',function(){
+        Auth::logout();
+        return redirect()->to('/login');
+                  
     });
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 =======
 
@@ -61,5 +73,17 @@ Route::prefix('/admin')->group(function () {
     });
 >>>>>>> Stashed changes
 });
+=======
+
+   //    Admin page Route
+    Route::group(['middleware' =>['auth']], function(){
+        Route::get('/login',function(){
+            return redirect()->to('/login');
+        });
+        Route::get('/dashboard',[AdminController::class,'index']);
+    });
+   
+    });
+>>>>>>> Stashed changes
 
 
