@@ -66,11 +66,12 @@ Route::prefix('/admin')->group(function () {
         Route::get('/delete-contact-us/{id}',[AdminController::class,'deleteContactUS']);
 
         Route::get('post-ads' ,[AdminController::class,'postAds']);
-        Route::get('/edit-post-ads' ,[AdminController::class,'editPostAds']);
+        Route::get('/edit-post/{id}' ,[VehicleController::class,'editPostAds']);
+        Route::get('/edit-post/{id}' ,[VehicleController::class,'updatePostAds']);
+        Route::get('/delete-post-ads/{id}',[AdminController::class,'deletePostAds']);
     });
-
+   
 });
 
 
-  
 

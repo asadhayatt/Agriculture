@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 
 use App\Models\ContactUs;
-use App\Models\PostAds;
+use App\Models\Vehicle;
 use App\Models\User;
 
 use Illuminate\Http\Request;
@@ -17,20 +17,23 @@ class AdminController extends Controller
 {
     public function index(){
 
-    return view('admin.index');
+    return view('admin.adminTabs.dashboard');
 }
 
      
     public function postAds(){
-        $post = PostAds::get();
+     $post = Vehicle::get();
+
         return view('admin.adminTabs.postAds',compact('post'));
  
     }
-    public function editPostAds(){
-        post::find($id)->edit();
-        return view('admin.adminTabs.editPostAds');
-        
-    }
+    public function deletePostAds($id){
+        Vehicle::find($id)->delete();
+        return redirect()->to('/admin/post-ads');
+       
+    } 
+   
+
 
     public function contactUS(){
         $contact = ContactUs::get();

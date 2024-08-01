@@ -83,17 +83,27 @@ class VehicleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
-    {
-        //
-    }
+    public function editPostAds($id)
+    
+        {
+            $post = Vehicle::find($id);
+            return view('admin.adminTabs.editPost', compact('post'));
+        }
+    
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function updatePost(Request $request, $id)
     {
-        //
+        $post = Vehicle::find($id);
+        $post->vehiclename = $request->input('vehiclename');
+        $post->type = $request->input('type');
+        $post->image = $request->input('image');
+        $post->weight = $request->input('weight');
+        $post->price = $request->input('price');
+        $post->save();
+        return redirect()->route('admin.adminTabs.postAds');
     }
 
     /**
