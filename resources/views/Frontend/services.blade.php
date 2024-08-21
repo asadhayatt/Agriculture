@@ -152,7 +152,7 @@
 	</div>
 	<div class="col-md-2">
 	 <div class="connect_1r clearfix">
-	   <h5 class="mb-0"><a class="button_1" href="{{url('/new-service')}}">Post Adds</a></h5>
+	   <h5 class="mb-0"><a class="button_1" href="{{url('/admin/dashboard')}}">Post Adds</a></h5>
 	 </div>
 	</div>
    </div>

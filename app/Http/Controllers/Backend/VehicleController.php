@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Vehicle;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Support\Facades\Validator;
 
@@ -45,19 +46,24 @@ class VehicleController extends Controller
         $image->move($destinationPath, $imagename);
 
         $vehicle = new Vehicle();
-        $vehicle->vehiclename =$request->vehiclename;
-        $vehicle->type =$request->type;
+        $vehicle->user_id =Auth::user()->id;
         $vehicle->image ='Frontend/services/'.$imagename;
-        $vehicle->price =$request->price;
+        $vehicle->vehiclename =$request->vehiclename;
+        $vehicle->duration =$request->duration;
+        $vehicle->location =$request->location;
         $vehicle->weight =$request->weight;
+        $vehicle->description =$request->description;
+        $vehicle->categories =$request->categories;
+        $vehicle->contact =$request->contact;
+        $vehicle->price =$request->price;
         $vehicle->save();
         alert()->success('Ad Created successfully!','Your Ad is live !');
 
         
-        return redirect('/services');
+        return redirect()->to('/admin/post-ads');  /* by url return*/
     }
     else {
-        alert()->error('Ad Created Failed!','Something went wrong !');
+        alert()->error('Ad Creation failed!','Please Select Image!');
         return redirect()->back();
     }
     }
@@ -83,6 +89,11 @@ class VehicleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
+    public function showCreateAdPage()
+        {
+    
+            return view('admin.adminTabs.createPost');
+        }
     public function editPostAds($id)
     
         {
@@ -94,17 +105,32 @@ class VehicleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function updatePost(Request $request, $id)
+    public function updatePostAds(Request $request, $id)
     {
+        $imagename= "";
         $post = Vehicle::find($id);
         $post->vehiclename = $request->input('vehiclename');
-        $post->type = $request->input('type');
-        $post->image = $request->input('image');
+        $post->categories = $request->input('categories');
+        if($request->hasfile('image')){
+            $image = $request->file('image');
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            $destinationPath = public_path('/Frontend/services');
+            $image->move($destinationPath, $imagename);
+            $post->image = 'Frontend/services/'.$imagename;;
+        }
         $post->weight = $request->input('weight');
         $post->price = $request->input('price');
         $post->save();
-        return redirect()->route('admin.adminTabs.postAds');
+
+        return redirect()->to('/admin/post-ads');
     }
+    // else{
+    //     alert()->error('Ad Creation failed!','Please Select Image!');
+    //     return redirect()->back();
+    // }
+
+
+
 
     /**
      * Remove the specified resource from storage.

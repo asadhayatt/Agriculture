@@ -22,9 +22,18 @@ class AdminController extends Controller
 
      
     public function postAds(){
-     $post = Vehicle::get();
+        // return 'misbah';
+        if(Auth::user()->role == 'super admin'){
+            
+            $post = Vehicle::with('user')->get();
 
-        return view('admin.adminTabs.postAds',compact('post'));
+        }
+        else{
+
+            $post = Vehicle::where('user_id',Auth::user()->id)->get();
+        }
+
+        return view('admin.adminTabs.postAds', compact('post'));
  
     }
     public function deletePostAds($id){
@@ -98,8 +107,8 @@ class AdminController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->role = 'service provider'; 
         $user->password = Hash::make($request->password);
-        $user->type = 1;
         $user->status = 1;
         $user->save();
 

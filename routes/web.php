@@ -32,7 +32,6 @@ Route::get('/gallery',[GalleryController::class,'index']);
 Route::get('/portfolio',[PortfolioController::class,'index']);
 Route::get('/services',[ServicesController::class,'index']);
 Route::get('/new-service',[VehicleController::class,'index'])->name('index');
-Route::post('/store-ad',[VehicleController::class,'create']);
 Route::get('/details/{id}',[ServicesController::class,'details']);
 Route::get('/login',function(){
     if(Auth::user()){
@@ -66,8 +65,10 @@ Route::prefix('/admin')->group(function () {
         Route::get('/delete-contact-us/{id}',[AdminController::class,'deleteContactUS']);
 
         Route::get('post-ads' ,[AdminController::class,'postAds']);
+        Route::get('/create-post' ,[VehicleController::class,'showCreateAdPage']);
+        Route::post('/store-ad',[VehicleController::class,'create']);
         Route::get('/edit-post/{id}' ,[VehicleController::class,'editPostAds']);
-        Route::get('/edit-post/{id}' ,[VehicleController::class,'updatePostAds']);
+        Route::post('/edit-post/{id}' ,[VehicleController::class,'updatePostAds']);
         Route::get('/delete-post-ads/{id}',[AdminController::class,'deletePostAds']);
     });
    

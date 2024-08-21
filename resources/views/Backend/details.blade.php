@@ -24,7 +24,7 @@
 <div class=" card-container">
 		<img src="{{asset($item->image)}}" class="image" alt="Product Image">
 		<div class="data">
-    <span class="product-catagory">{{ $item->type }}</span>
+    <span class="product-catagory">{{ $item->category }}</span>
                 <h4><a href="">{{ $item->vehiclename }}</a></h4>
                 <p>How much carry : {{ $item->weight }}kg</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>

@@ -31,12 +31,17 @@
                 <span class="menu-title">Dashboard</span>
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ url('/admin/contact-us') }}">
-                <i class="icon-book menu-icon"></i>
-                <span class="menu-title">Contact Us</span>
-            </a>
-        </li>
+       @if (Auth::user()->role == 'super admin')
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/admin/contact-us') }}">
+                        <i class="icon-book menu-icon"></i>
+                        <span class="menu-title">Contact Us</span>
+                    </a>
+                </li>
+           
+       @else
+           
+       @endif
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/admin/post-ads') }}">
                 <i class="icon-book menu-icon"></i>

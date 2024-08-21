@@ -13,11 +13,17 @@ return new class extends Migration
     {
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
-            $table->string('vehiclename');
-            $table->string('type');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // assuming you want a foreign key for users
             $table->string('image');
-            $table->bigInteger('weight');
-            $table->bigInteger('price');
+            $table->string('vehiclename');
+            $table->string('duration');
+            $table->string('location');
+            $table->string('weight');
+            $table->string('description');
+            $table->string('categories');
+            $table->string('contact');
+            $table->string('price');
+            $table->integer('status');
             $table->timestamps();
         });
     }
